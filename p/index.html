@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <!-- Copyright 2015 Robben Migacz -->
   <title>Check Progress</title>
   <meta charset="utf-8" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,400italic" rel="stylesheet" type="text/css">
@@ -159,11 +160,9 @@
         {
           grad = n[1];
         }
-        console.log(encode + " " + text);
         if (text == encode)
         {
           d = 1;
-          console.log("Match found.")
           r += encode + ". House ";
           switch (faction)
           {
@@ -221,10 +220,6 @@
               }
               if (p > 2)
               {
-                if (p == 11)
-                {
-                  console.log(grad[p]);
-                }
                 r += " <span class = 'percent'>" + Math.round(n[j][p] / grad[p] * 100) + "%</span>";
                 if ((n[j][p] / grad[p] * 100 <= 100) && (n[j][p] / grad[p] * 100 > 0))
                 {
